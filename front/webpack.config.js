@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   entry: './src/app.jsx',
@@ -7,6 +8,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   devtool: 'inline-source-map',
+  resolve: {
+    modules: [path.join(__dirname, 'src'), 'node_modules'],
+    extensions: ['.js', '.jsx']
+  },
   module: {
     loaders: [
       {
