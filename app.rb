@@ -4,5 +4,5 @@ require 'sinatra/reloader'
 #################
 ## Controller
 ################
-gem '/chat' do
+get '/index.html' do
 end
