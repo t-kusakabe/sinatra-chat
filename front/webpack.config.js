@@ -4,7 +4,8 @@ const webpack = require('webpack')
 module.exports = {
   entry: './src/app.jsx',
   output: {
-    path: path.resolve('dist/'),
+    // path: path.resolve('dist/'),
+    path: path.resolve('../public/'),
     filename: 'bundle.js'
   },
   devtool: 'inline-source-map',
